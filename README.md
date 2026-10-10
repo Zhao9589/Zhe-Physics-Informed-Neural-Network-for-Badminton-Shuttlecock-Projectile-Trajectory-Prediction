@@ -1,4 +1,5 @@
 # Zhe-Physics-Informed-Neural-Network-for-Badminton-Shuttlecock-Projectile-Trajectory-Prediction
+Full project code: `Zhe-physicsPINN.ipynb`
 ## Abstract
 This project uses Euler simulation to create datasets of badminton flight paths. It compares the prediction results of traditional machine learning models and a Physics-Informed Neural Network (PINN). I train the models with data at angles from 30° to 45°. Then I test how well they work within this training range, and how they handle new large angles from 50° to 60°. Traditional models fail when predicting these new cases. With rules from physics equations, PINN can still draw flight paths that make physical sense for unseen situations. However, there are still some errors in its predicted flight range.
 
