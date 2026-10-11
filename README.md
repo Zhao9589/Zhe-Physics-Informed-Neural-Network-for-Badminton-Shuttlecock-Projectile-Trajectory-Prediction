@@ -4,9 +4,9 @@ Full project code: `Zhe-physicsPINN.ipynb`
 This project uses Euler simulation to create datasets of badminton flight paths. It compares the prediction results of traditional machine learning models and a Physics-Informed Neural Network (PINN). I train the models with data at angles from 30° to 45°. Then I test how well they work within this training range, and how they handle new large angles from 50° to 60°. Traditional models fail when predicting these new cases. With rules from physics equations, PINN can still draw flight paths that make physical sense for unseen situations. However, there are still some errors in its predicted flight range.
 
 ## Project Background
-Inspired by watching shuttlecock flight paths during badminton smashes, this project uses Physics-Informed Neural Networks (PINN) to simulate projectile motion with air resistance. I also compare PINN with common machine learning models that only learn from data.
+I’ve played badminton for 11 years. When I watch shuttlecocks fly during smashes, I notice they don’t follow the simple projectile path we learn in physics class. The strong, nonlinear air drag changes the trajectory a lot. This real-life observation got me thinking, so I made this project. I use a Physics-Informed Neural Network (PINN) to simulate how a shuttlecock flies.
 
-A badminton shuttlecock has non-linear air drag. This makes its movement harder to calculate than simple ideal projectile motion. Euler simulation can calculate accurate flight paths, but it takes a lot of time to test many different hitting settings.
+A badminton shuttlecock has nonlinear air drag. This makes its movement harder to calculate than simple ideal projectile motion. Euler simulation can calculate accurate flight paths, but it takes a lot of time to test many different hitting settings.
 
 Normal machine learning models only learn patterns from the data they are given. When we test conditions outside the training data, their predictions often break the rules of physics. To solve this problem, I built a PINN. PINN adds physics rules to the training process. So it may still give reasonable predictions even for situations it has never seen.
 
