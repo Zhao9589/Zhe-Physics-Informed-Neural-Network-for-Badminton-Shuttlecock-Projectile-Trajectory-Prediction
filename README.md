@@ -15,7 +15,7 @@ This project aims to predict the flight paths and landing distances of badminton
 
 ## Project Workflow & Principles
 ### Step 1: Generate simulation datasets with Euler method
-**What I did**: I wrote an Euler-Maruyama simulation program to calculate shuttlecock flight under different starting conditions: launch speed, angle and drag coefficient. Three CSV files are created.
+**What I did**: I wrote an Explicit Euler Method simulation program to calculate shuttlecock flight under different starting conditions: launch speed, angle and drag coefficient. Three CSV files are created.
 **Principle**: The Euler method solves Newton’s second law step by step. It calculates acceleration caused by gravity and quadratic air drag, then updates speed and position with small time steps. This gives reliable reference flight data.
 
 Three generated CSV files:
